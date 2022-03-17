@@ -88,11 +88,12 @@ WSGI_APPLICATION = 'django_hello.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydatabase',
-        'USER': 'mydatabaseuser',
+        'NAME': 'django',
+        'USER': 'wolfgang',
         'PASSWORD': 'mypassword',
-        'HOST': '127.0.0.1',
+        'HOST': 'wgfhpostgre.postgres.database.azure.com',
         'PORT': '5432',
+        'OPTIONS':{'sslmode':'require'}
     }
 }
 
