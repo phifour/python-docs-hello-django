@@ -90,14 +90,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django',
         'USER': 'wolfgang',
-        'PASSWORD': 'mypassword',
+        'PASSWORD': os.getenv("DB_PASSWORD"),
         'HOST': 'wgfhpostgre.postgres.database.azure.com',
         'PORT': '5432',
         'OPTIONS':{'sslmode':'require'}
     }
 }
 
-https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+#https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 
 
